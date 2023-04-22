@@ -1,0 +1,43 @@
+version: '3.8'
+services:
+  adminbarrio-app:
+    image: docker.io/bitnami/laravel:10
+    container_name: admin_barrio_app
+    ports:
+      - '8000:8000'
+    environment:
+      APP_NAME: "AdminBarrio"
+      APP_ENV: "local"
+      # APP_KEY: "base64:GENERATE_YOUR_OWN_KEY"
+      APP_DEBUG: "true"
+      APP_URL: "http://localhost"
+      LOG_CHANNEL: "stderr"
+      DB_CONNECTION: "mysql"
+      DB_HOST: "adminbarrio-db"
+      DB_PORT: "3306"
+      DB_DATABASE: "adminbarrio"
+      DB_USERNAME: "adminbarrrio"
+      DB_PASSWORD: "@dm1nb@rr10"
+      XDEBUG_MODE: "debug"
+    volumes:
+      - './app:/app'
+    depends_on:
+      - adminbarrio-db
+  adminbarrio-db:
+    image: mysql:8
+    ports:
+    - '3307:3306'
+    container_name: admin_barrio_db
+    restart: unless-stopped
+    volumes:
+      - ./mysql:/var/lib/mysql
+    environment:
+      # ALLOW_EMPTY_PASSWORD is recommended only for development.
+      # ALLOW_EMPTY_PASSWORD: yes  
+      MYSQL_ROOT_PASSWORD: "@dm1nb@rr10"
+      MYSQL_DATABASE: "adminbarrio"
+    networks:
+      - admin_barrio
+networks:
+  admin_barrio:
+    driver: bridge
