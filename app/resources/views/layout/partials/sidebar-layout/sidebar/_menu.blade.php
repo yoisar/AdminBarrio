@@ -9,7 +9,7 @@
 				<!--begin:Menu link-->
 				<span class="menu-link">
 					<span class="menu-icon">{!! getIcon('element-11', 'fs-2') !!}</span>
-					<span class="menu-title">Dashboards</span>
+					<span class="menu-title">Inicio</span>
 					<span class="menu-arrow"></span>
 				</span>
 				<!--end:Menu link-->
@@ -22,7 +22,19 @@
 							<span class="menu-bullet">
 								<span class="bullet bullet-dot"></span>
 							</span>
-							<span class="menu-title">Default</span>
+							<span class="menu-title">Mi perfil</span>
+						</a>
+						<!--end:Menu link-->
+					</div>
+					<!--end:Menu item-->
+					<!--begin:Menu item-->
+					<div class="menu-item">
+						<!--begin:Menu link-->
+						<a class="menu-link active" href="/">
+							<span class="menu-bullet">
+								<span class="bullet bullet-dot"></span>
+							</span>
+							<span class="menu-title">Barrios</span>
 						</a>
 						<!--end:Menu link-->
 					</div>
@@ -34,7 +46,7 @@
 							<span class="menu-bullet">
 								<span class="bullet bullet-dot"></span>
 							</span>
-							<span class="menu-title">eCommerce</span>
+							<span class="menu-title">Residentes</span>
 						</a>
 						<!--end:Menu link-->
 					</div>

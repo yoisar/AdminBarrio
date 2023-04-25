@@ -6244,8 +6244,7 @@ textarea.form-control-lg {
   float: left;
   width: 100%;
   margin-right: -100%;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   transition: transform 0.6s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
@@ -11207,8 +11206,16 @@ textarea.form-control-lg {
   font-size: 0.5rem !important;
 }
 
+.fs-sm {
+  font-size: 0.95rem !important;
+}
+
 .fs-base {
   font-size: 1rem !important;
+}
+
+.fs-lg {
+  font-size: 1.075rem !important;
 }
 
 .fs-fluid {
@@ -15278,8 +15285,14 @@ textarea.form-control-lg {
   .fs-sm-10 {
     font-size: 0.5rem !important;
   }
+  .fs-sm-sm {
+    font-size: 0.95rem !important;
+  }
   .fs-sm-base {
     font-size: 1rem !important;
+  }
+  .fs-sm-lg {
+    font-size: 1.075rem !important;
   }
   .fs-sm-fluid {
     font-size: 100% !important;
@@ -18351,8 +18364,14 @@ textarea.form-control-lg {
   .fs-md-10 {
     font-size: 0.5rem !important;
   }
+  .fs-md-sm {
+    font-size: 0.95rem !important;
+  }
   .fs-md-base {
     font-size: 1rem !important;
+  }
+  .fs-md-lg {
+    font-size: 1.075rem !important;
   }
   .fs-md-fluid {
     font-size: 100% !important;
@@ -21424,8 +21443,14 @@ textarea.form-control-lg {
   .fs-lg-10 {
     font-size: 0.5rem !important;
   }
+  .fs-lg-sm {
+    font-size: 0.95rem !important;
+  }
   .fs-lg-base {
     font-size: 1rem !important;
+  }
+  .fs-lg-lg {
+    font-size: 1.075rem !important;
   }
   .fs-lg-fluid {
     font-size: 100% !important;
@@ -24497,8 +24522,14 @@ textarea.form-control-lg {
   .fs-xl-10 {
     font-size: 0.5rem !important;
   }
+  .fs-xl-sm {
+    font-size: 0.95rem !important;
+  }
   .fs-xl-base {
     font-size: 1rem !important;
+  }
+  .fs-xl-lg {
+    font-size: 1.075rem !important;
   }
   .fs-xl-fluid {
     font-size: 100% !important;
@@ -27570,8 +27601,14 @@ textarea.form-control-lg {
   .fs-xxl-10 {
     font-size: 0.5rem !important;
   }
+  .fs-xxl-sm {
+    font-size: 0.95rem !important;
+  }
   .fs-xxl-base {
     font-size: 1rem !important;
+  }
+  .fs-xxl-lg {
+    font-size: 1.075rem !important;
   }
   .fs-xxl-fluid {
     font-size: 100% !important;
@@ -29512,8 +29549,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 }
 
 .menu-item.show .menu-link .menu-arrow:after {
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   transition: transform 0.3s ease;
 }
 
@@ -34118,14 +34154,14 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
 .btn:not(.btn-shadow):not(.shadow):not(.shadow-sm):not(.shadow-lg):not(.shadow-xs) {
   box-shadow: none;
 }
-.btn:not(.btn-outline):not(.btn-dashed):not(.border-hover):not(.border-active):not(.btn-flush):not(.btn-icon) {
+.btn:not(.btn-outline):not(.btn-dashed):not(.btn-bordered):not(.border-hover):not(.border-active):not(.btn-flush):not(.btn-icon) {
   border: 0;
   padding: calc(0.775rem + 1px) calc(1.5rem + 1px);
 }
-.btn:not(.btn-outline):not(.btn-dashed):not(.border-hover):not(.border-active):not(.btn-flush):not(.btn-icon).btn-lg, .btn-group-lg > .btn:not(.btn-outline):not(.btn-dashed):not(.border-hover):not(.border-active):not(.btn-flush):not(.btn-icon) {
+.btn:not(.btn-outline):not(.btn-dashed):not(.btn-bordered):not(.border-hover):not(.border-active):not(.btn-flush):not(.btn-icon).btn-lg, .btn-group-lg > .btn:not(.btn-outline):not(.btn-dashed):not(.btn-bordered):not(.border-hover):not(.border-active):not(.btn-flush):not(.btn-icon) {
   padding: calc(0.825rem + 1px) calc(1.75rem + 1px);
 }
-.btn:not(.btn-outline):not(.btn-dashed):not(.border-hover):not(.border-active):not(.btn-flush):not(.btn-icon).btn-sm, .btn-group-sm > .btn:not(.btn-outline):not(.btn-dashed):not(.border-hover):not(.border-active):not(.btn-flush):not(.btn-icon) {
+.btn:not(.btn-outline):not(.btn-dashed):not(.btn-bordered):not(.border-hover):not(.border-active):not(.btn-flush):not(.btn-icon).btn-sm, .btn-group-sm > .btn:not(.btn-outline):not(.btn-dashed):not(.btn-bordered):not(.border-hover):not(.border-active):not(.btn-flush):not(.btn-icon) {
   padding: calc(0.55rem + 1px) calc(1.25rem + 1px);
 }
 .btn.btn-link {
@@ -34196,6 +34232,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   padding: 0;
   height: calc(1.5em + 1.55rem + 2px);
   width: calc(1.5em + 1.55rem + 2px);
+  line-height: 1;
 }
 .btn.btn-icon:not(.btn-outline):not(.btn-dashed):not(.border-hover):not(.border-active):not(.btn-flush) {
   border: 0;
@@ -42471,9 +42508,17 @@ code:not([class*=language-]) {
   height: 0.5rem !important;
   width: 0.5rem !important;
 }
+.svg-icon.svg-icon-sm svg {
+  height: 0.95rem !important;
+  width: 0.95rem !important;
+}
 .svg-icon.svg-icon-base svg {
   height: 1rem !important;
   width: 1rem !important;
+}
+.svg-icon.svg-icon-lg svg {
+  height: 1.075rem !important;
+  width: 1.075rem !important;
 }
 .svg-icon.svg-icon-fluid svg {
   height: 100% !important;
@@ -42616,9 +42661,17 @@ code:not([class*=language-]) {
     height: 0.5rem !important;
     width: 0.5rem !important;
   }
+  .svg-icon.svg-icon-sm-sm svg {
+    height: 0.95rem !important;
+    width: 0.95rem !important;
+  }
   .svg-icon.svg-icon-sm-base svg {
     height: 1rem !important;
     width: 1rem !important;
+  }
+  .svg-icon.svg-icon-sm-lg svg {
+    height: 1.075rem !important;
+    width: 1.075rem !important;
   }
   .svg-icon.svg-icon-sm-fluid svg {
     height: 100% !important;
@@ -42762,9 +42815,17 @@ code:not([class*=language-]) {
     height: 0.5rem !important;
     width: 0.5rem !important;
   }
+  .svg-icon.svg-icon-md-sm svg {
+    height: 0.95rem !important;
+    width: 0.95rem !important;
+  }
   .svg-icon.svg-icon-md-base svg {
     height: 1rem !important;
     width: 1rem !important;
+  }
+  .svg-icon.svg-icon-md-lg svg {
+    height: 1.075rem !important;
+    width: 1.075rem !important;
   }
   .svg-icon.svg-icon-md-fluid svg {
     height: 100% !important;
@@ -42908,9 +42969,17 @@ code:not([class*=language-]) {
     height: 0.5rem !important;
     width: 0.5rem !important;
   }
+  .svg-icon.svg-icon-lg-sm svg {
+    height: 0.95rem !important;
+    width: 0.95rem !important;
+  }
   .svg-icon.svg-icon-lg-base svg {
     height: 1rem !important;
     width: 1rem !important;
+  }
+  .svg-icon.svg-icon-lg-lg svg {
+    height: 1.075rem !important;
+    width: 1.075rem !important;
   }
   .svg-icon.svg-icon-lg-fluid svg {
     height: 100% !important;
@@ -43054,9 +43123,17 @@ code:not([class*=language-]) {
     height: 0.5rem !important;
     width: 0.5rem !important;
   }
+  .svg-icon.svg-icon-xl-sm svg {
+    height: 0.95rem !important;
+    width: 0.95rem !important;
+  }
   .svg-icon.svg-icon-xl-base svg {
     height: 1rem !important;
     width: 1rem !important;
+  }
+  .svg-icon.svg-icon-xl-lg svg {
+    height: 1.075rem !important;
+    width: 1.075rem !important;
   }
   .svg-icon.svg-icon-xl-fluid svg {
     height: 100% !important;
@@ -43200,9 +43277,17 @@ code:not([class*=language-]) {
     height: 0.5rem !important;
     width: 0.5rem !important;
   }
+  .svg-icon.svg-icon-xxl-sm svg {
+    height: 0.95rem !important;
+    width: 0.95rem !important;
+  }
   .svg-icon.svg-icon-xxl-base svg {
     height: 1rem !important;
     width: 1rem !important;
+  }
+  .svg-icon.svg-icon-xxl-lg svg {
+    height: 1.075rem !important;
+    width: 1.075rem !important;
   }
   .svg-icon.svg-icon-xxl-fluid svg {
     height: 100% !important;
@@ -43777,8 +43862,7 @@ code:not([class*=language-]) {
 
 .rotate-90 {
   transition: transform 0.3s ease;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   will-change: transform;
 }
 .collapsible:not(.collapsed) > .rotate-90, .show > .rotate-90, .active > .rotate-90 {
@@ -43791,8 +43875,7 @@ code:not([class*=language-]) {
 
 .rotate-n90 {
   transition: transform 0.3s ease;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   will-change: transform;
 }
 .collapsible:not(.collapsed) > .rotate-n90, .show > .rotate-n90, .active > .rotate-n90 {
@@ -43805,8 +43888,7 @@ code:not([class*=language-]) {
 
 .rotate-180 {
   transition: transform 0.3s ease;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   will-change: transform;
 }
 .collapsible:not(.collapsed) > .rotate-180, .show > .rotate-180, .active > .rotate-180 {
@@ -43819,8 +43901,7 @@ code:not([class*=language-]) {
 
 .rotate-n180 {
   transition: transform 0.3s ease;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   will-change: transform;
 }
 .collapsible:not(.collapsed) > .rotate-n180, .show > .rotate-n180, .active > .rotate-n180 {
@@ -43833,8 +43914,7 @@ code:not([class*=language-]) {
 
 .rotate-270 {
   transition: transform 0.3s ease;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   will-change: transform;
 }
 .collapsible:not(.collapsed) > .rotate-270, .show > .rotate-270, .active > .rotate-270 {
@@ -43847,8 +43927,7 @@ code:not([class*=language-]) {
 
 .rotate-n270 {
   transition: transform 0.3s ease;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
   will-change: transform;
 }
 .collapsible:not(.collapsed) > .rotate-n270, .show > .rotate-n270, .active > .rotate-n270 {
