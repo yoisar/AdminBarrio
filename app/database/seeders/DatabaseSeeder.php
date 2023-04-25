@@ -3,6 +3,8 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+
+use App\Models\AbPermission;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -19,6 +21,8 @@ class DatabaseSeeder extends Seeder
         ]);
         // seeder toles
         $this->call(AbRoleSeeder::class);
+        // permission seeder
+        $this->call(AbPermissionSeeder::class);
 
         // \App\Models\User::factory(10)->create();
 

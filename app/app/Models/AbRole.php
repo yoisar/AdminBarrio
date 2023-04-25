@@ -11,7 +11,8 @@ class AbRole extends Model
     
     protected $fillable = [
         'name',
-        'slug',
+        'guard_name',
+        'slug',        
         'description',
     ];
 

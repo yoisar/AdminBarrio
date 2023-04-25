@@ -18,21 +18,25 @@ class AbRoleSeeder extends Seeder
                 'name' => 'Super Admin',
                 'description' => 'Tiene acceso a todo el sistema',
                 'slug' => 'super-admin',
+                'guard_name' => 'web',
             ],
             [
                 'name' => 'Admin Barrios',
                 'description' => 'Administra barrios',
                 'slug' => 'admin-barrios',
+                'guard_name' => 'web',
             ],
             [
                 'name' => 'Admin Alquileres',
                 'description' => 'Administra solo alquileres',
                 'slug' => 'admin-alquileres',
+                'guard_name' => 'web',
             ],
             [
                 'name' => 'Admin Dual',
                 'description' => 'Administra barrios y alquila',
                 'slug' => 'admin-dual',
+                'guard_name' => 'web',
             ]
         ];
 

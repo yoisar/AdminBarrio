@@ -11,12 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('ab_roles', function (Blueprint $table) {
+        Schema::create('ab_permissions', function (Blueprint $table) {
             $table->id();
             $table->string('name');
             $table->string('slug')->unique();
-            $table->string('guard_name')->default('web'); // Definimos el guardia por defecto            
             $table->text('description')->nullable();
+            $table->string('guard_name')->default('web'); // Definimos el guardia por defecto            
             $table->timestamps();
         });
     }
@@ -26,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('ab_roles');
+        Schema::dropIfExists('ab_permissions');
     }
 };
