@@ -23,6 +23,17 @@ class DatabaseSeeder extends Seeder
         $this->call(AbRoleSeeder::class);
         // permission seeder
         $this->call(AbPermissionSeeder::class);
+        // countries
+        $this->call(AbCountrySeeder::class);
+        // provinces
+        $this->call(AbProvinceSeeder::class);
+        // cities
+        $this->call(AbCitySeeder::class);
+        // properties types
+        $this->call(AbPropertyTypeSeeder::class);
+        // Neighborhood
+        $this->call(AbNeighborhoodSeeder::class);
+
 
         // \App\Models\User::factory(10)->create();
 
