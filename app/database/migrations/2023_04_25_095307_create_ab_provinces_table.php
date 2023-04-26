@@ -14,7 +14,8 @@ return new class extends Migration
         Schema::create('ab_provinces', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->unsignedBigInteger('country_id');
+            $table->string('iso_code');
+            $table->unsignedBigInteger('ab_country_id');
             $table->timestamps();
         });
     }
