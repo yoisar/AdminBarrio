@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('ab_neighborhoods', function (Blueprint $table) {
             $table->id();
-            $table->string('name');
+            $table->string('name');            
             $table->text('description')->nullable();
             $table->foreignId('ab_city_id')->constrained();
             $table->timestamps();

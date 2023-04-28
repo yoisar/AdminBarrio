@@ -16,7 +16,7 @@ class AbCitySeeder extends Seeder
         $misiones = DB::table('ab_provinces')->where('iso_code', 'MNES')->first();
 
         DB::table('ab_cities')->insert([
-            ['name' => 'Posadas', 'ab_province_id' => $misiones->id],
+            ['name' => 'Posadas', 'zip_code' => '3300', 'ab_province_id' => $misiones->id],
             //Agregar otras ciudades de Misiones y otras provincias de Argentina
         ]);
     }
