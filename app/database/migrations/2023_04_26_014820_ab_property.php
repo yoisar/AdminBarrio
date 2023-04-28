@@ -14,11 +14,7 @@ return new class extends Migration
         Schema::create('ab_properties', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('address');
-            $table->string('city');
-            $table->string('state');
-            $table->string('zip_code');
-            $table->string('country');
+            $table->string('address');            
             $table->float('latitude', 10, 6);
             $table->float('longitude', 10, 6);
             $table->text('description');

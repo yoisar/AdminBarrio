@@ -12,10 +12,6 @@ class AbProperty extends Model
     protected $fillable = [
         'name',
         'address',
-        'city',
-        'state',
-        'zip_code',
-        'country',
         'latitude',
         'longitude',
         'description',
