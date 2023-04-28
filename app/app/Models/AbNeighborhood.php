@@ -16,11 +16,11 @@ class AbNeighborhood extends Model
 
     public function city()
     {
-        return $this->belongsTo(City::class);
+        return $this->belongsTo(AbCity::class);
     }
 
     public function properties()
     {
-        return $this->hasMany(Property::class);
+        return $this->hasMany(AbProperty::class);
     }
 }

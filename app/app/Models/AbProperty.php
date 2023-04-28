@@ -15,7 +15,9 @@ class AbProperty extends Model
         'latitude',
         'longitude',
         'description',
-        'price',
+        'sale_price',
+        'rent_price',
+        'square_meters',
         'currency',
         'status',
         'user_id',
@@ -30,11 +32,11 @@ class AbProperty extends Model
 
     public function propertyType()
     {
-        return $this->belongsTo(PropertyType::class);
+        return $this->belongsTo(AbPropertyType::class);
     }
 
     public function neighborhood()
     {
-        return $this->belongsTo(Neighborhood::class);
+        return $this->belongsTo(AbNeighborhood::class);
     }
 }
