@@ -14,13 +14,15 @@ return new class extends Migration
         Schema::create('ab_properties', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->string('address');            
+            $table->string('address');
             $table->float('latitude', 10, 6);
             $table->float('longitude', 10, 6);
+            $table->smallInteger('bedrooms');
+            $table->smallInteger('bathrooms');
             $table->text('description');
             $table->float('price');
             $table->string('currency');
-            $table->enum('status', ['available', 'unavailable']);
+            $table->enum('status', ['available', 'unavailable'])->default('available');
             $table->foreignId('user_id')->constrained();
             $table->foreignId('ab_property_type_id')->constrained();
             $table->foreignId('ab_neighborhood_id')->constrained();
