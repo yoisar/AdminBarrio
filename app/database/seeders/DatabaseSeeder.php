@@ -33,6 +33,10 @@ class DatabaseSeeder extends Seeder
         $this->call(AbPropertyTypeSeeder::class);
         // Neighborhood
         $this->call(AbNeighborhoodSeeder::class);
+        // Properies
+        $this->call(AbPropertySeeder::class);
+        // Resident
+        $this->call(AbResidentSeeder::class);
 
 
         // \App\Models\User::factory(10)->create();
