@@ -13,7 +13,7 @@ class AbCitySeeder extends Seeder
      */
     public function run()
     {
-        $misiones = DB::table('ab_provinces')->where('iso_code', 'N')->first();
+        $misiones = DB::table('ab_provinces')->where('iso_code', 'MNES')->first();
 
         DB::table('ab_cities')->insert([
             ['name' => 'Posadas', 'ab_province_id' => $misiones->id],
