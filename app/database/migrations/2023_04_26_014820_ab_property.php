@@ -20,8 +20,11 @@ return new class extends Migration
             $table->smallInteger('bedrooms');
             $table->smallInteger('bathrooms');
             $table->text('description');
-            $table->float('price');
-            $table->string('currency');
+            $table->string('currency')->default('ARS');
+            $table->float('exchange_rate')->default(1);
+            $table->double('sale_price', 15, 3);
+            $table->double('rent_price', 15, 3)->default(0);
+            $table->double('square_meters', 6, 2)->default(0);
             $table->enum('status', ['available', 'unavailable'])->default('available');
             $table->foreignId('user_id')->constrained();
             $table->foreignId('ab_property_type_id')->constrained();

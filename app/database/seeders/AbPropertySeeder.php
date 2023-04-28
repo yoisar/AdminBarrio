@@ -26,7 +26,7 @@ class AbPropertySeeder extends Seeder
                 'bedrooms' => rand(1, 4),
                 'bathrooms' => rand(1, 3),
                 'description' => 'Esta es la descripción de la propiedad ' . $i,
-                'price' => rand(100, 500),
+                'sale_price' => rand(300000, 2000000),
                 'currency' => 'ARS',
                 'ab_property_type_id' => $property_types->random()->id,
                 'ab_neighborhood_id' => $neighborhoods->random()->id,
