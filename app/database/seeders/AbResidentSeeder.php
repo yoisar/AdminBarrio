@@ -20,6 +20,10 @@ class AbResidentSeeder extends Seeder
             'last_name' => 'Doe',
             'email' => 'johndoe@example.com',
             'phone_number' => '123456789',
+            'document_type' => 'DNI',
+            'document_number' => '12345678',
+            'nationality' => 'Argentina',
+            'current_address' => 'Av. Siempreviva 123',
             'ab_property_id' => 1,
         ]);
 
@@ -28,6 +32,10 @@ class AbResidentSeeder extends Seeder
             'last_name' => 'Smith',
             'email' => 'janesmith@example.com',
             'phone_number' => '987654321',
+            'document_type' => 'Pasaporte',
+            'document_number' => 'ABC123',
+            'nationality' => 'Estados Unidos',
+            'current_address' => 'Calle Falsa 123',
             'ab_property_id' => 2,
         ]);
 

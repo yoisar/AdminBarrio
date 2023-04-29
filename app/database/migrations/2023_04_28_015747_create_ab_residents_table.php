@@ -17,6 +17,10 @@ return new class extends Migration
             $table->string('last_name');
             $table->string('email')->unique();
             $table->string('phone_number')->nullable();
+            $table->string('document_type');
+            $table->string('document_number');
+            $table->string('nationality');
+            $table->string('current_address');
             $table->unsignedBigInteger('ab_property_id')->nullable();
             $table->foreign('ab_property_id')->references('id')->on('ab_properties');
             $table->timestamps();

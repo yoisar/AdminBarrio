@@ -14,7 +14,11 @@ class AbResident extends Model
         'last_name',
         'email',
         'phone_number',
-        'property_id'
+        'property_id',
+        'document_type',
+        'document_number',
+        'nationality',
+        'current_address',
     ];
 
     public function property()
