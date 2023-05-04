@@ -26,7 +26,6 @@ return new class extends Migration
             $table->double('rent_price', 15, 3)->default(0);
             $table->double('square_meters', 6, 2)->default(0);
             $table->enum('status', ['available', 'unavailable'])->default('available');
-            $table->foreignId('user_id')->constrained();
             $table->foreignId('ab_property_type_id')->constrained();
             $table->foreignId('ab_neighborhood_id')->constrained();
             $table->timestamps();

@@ -19,16 +19,11 @@ class AbProperty extends Model
         'rent_price',
         'square_meters',
         'currency',
-        'status',
-        'user_id',
+        'status',        
         'property_type_id',
         'neighborhood_id',
     ];
-
-    public function user()
-    {
-        return $this->belongsTo(User::class);
-    }
+        
 
     public function propertyType()
     {

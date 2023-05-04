@@ -21,7 +21,6 @@ class AbPropertySeeder extends Seeder
                 'name' => 'Propiedad ' . $i,
                 'address' => 'Calle Falsa ' . $i,
                 'latitude' => 0,
-                'user_id' => 1,
                 'longitude' => 0,
                 'bedrooms' => rand(1, 4),
                 'bathrooms' => rand(1, 3),

@@ -11,7 +11,8 @@ class AbNeighborhood extends Model
     protected $fillable = [
         'name',
         'description',
-        'city_id'
+        'city_id',
+        'user_id'
     ];
 
     public function city()
@@ -19,6 +20,11 @@ class AbNeighborhood extends Model
         return $this->belongsTo(AbCity::class);
     }
 
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
+    
     public function properties()
     {
         return $this->hasMany(AbProperty::class);
