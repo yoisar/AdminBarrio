@@ -16,23 +16,23 @@ class AbCurrencySeeder extends Seeder
         $currencies = [
             [
                 'name' => 'Dólares Estadounidenses',
-                'symbol' => 'USD',
+                'code' => 'USD',
             ],
             [
                 'name' => 'Pesos Argentinos',
-                'symbol' => 'ARS',
+                'code' => 'ARS',
             ],
             [
                 'name' => 'Guaraníes Paraguayos',
-                'symbol' => 'PYG',
+                'code' => 'PYG',
             ],
             [
                 'name' => 'Real Brasileño',
-                'symbol' => 'BRL',
+                'code' => 'BRL',
             ],
             [
                 'name' => 'Pesos Uruguayos',
-                'symbol' => 'UYU',
+                'code' => 'UYU',
             ]
         ];
 
