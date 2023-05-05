@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
+use App\Models\AbCurrency;
 use App\Models\AbPermission;
 use Illuminate\Database\Seeder;
 
@@ -41,6 +42,8 @@ class DatabaseSeeder extends Seeder
         $this->call(AbFunctionalUnitSeeder::class);
         // Logs
         $this->call(AbLogSeeder::class);
+        // Currencies
+        $this->call(AbCurrencySeeder::class);
 
 
         // \App\Models\User::factory(10)->create();
