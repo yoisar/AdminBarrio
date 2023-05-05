@@ -15,6 +15,12 @@ class AbRoleSeeder extends Seeder
     {
         $roles = [
             [
+                'name' => 'System',
+                'description' => 'Sistema',
+                'slug' => 'system',
+                'guard_name' => 'web',
+            ],
+            [
                 'name' => 'Super Admin',
                 'description' => 'Tiene acceso a todo el sistema',
                 'slug' => 'super-admin',
@@ -33,9 +39,21 @@ class AbRoleSeeder extends Seeder
                 'guard_name' => 'web',
             ],
             [
-                'name' => 'Admin Dual',
+                'name' => 'Admin Barrios y Alquileres',
                 'description' => 'Administra barrios y alquila',
                 'slug' => 'admin-dual',
+                'guard_name' => 'web',
+            ],
+            [
+                'name' => 'Propietario',
+                'description' => 'Propietario',
+                'slug' => 'propietario',
+                'guard_name' => 'web',
+            ],
+            [
+                'name' => 'Inquilino',
+                'description' => 'Inquilino de propiedad',
+                'slug' => 'inquilino',
                 'guard_name' => 'web',
             ]
         ];

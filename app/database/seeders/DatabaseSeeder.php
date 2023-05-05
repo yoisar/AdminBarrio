@@ -39,6 +39,8 @@ class DatabaseSeeder extends Seeder
         $this->call(AbResidentSeeder::class);
         // Seed Funtional units
         $this->call(AbFunctionalUnitSeeder::class);
+        // Logs
+        $this->call(AbLogSeeder::class);
 
 
         // \App\Models\User::factory(10)->create();
