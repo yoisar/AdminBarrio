@@ -44,6 +44,8 @@ class DatabaseSeeder extends Seeder
         $this->call(AbLogSeeder::class);
         // Currencies
         $this->call(AbCurrencySeeder::class);
+        // Services
+        $this->call(AbServiceSeeder::class);
 
 
         // \App\Models\User::factory(10)->create();
