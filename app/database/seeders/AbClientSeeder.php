@@ -15,7 +15,7 @@ class AbClientSeeder extends Seeder
     {
         $faker = Faker::create();
 
-        for ($i = 0; $i < 10; $i++) {
+        for ($i = 0; $i < 100; $i++) {
             $client = new AbClient();
             $client->full_name = $faker->name;
             $client->document_type = $faker->randomElement(['DNI', 'Passport', 'License']);
