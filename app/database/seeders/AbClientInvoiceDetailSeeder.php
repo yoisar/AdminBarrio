@@ -22,14 +22,15 @@ class AbClientInvoiceDetailSeeder extends Seeder
 
         foreach ($invoices as $incoive) {
             for ($i = 0; $i < 1; $i++) {
+                $service = $services->random();
                 AbClientInvoiceDetail::create([
-                    'item' => $faker->word(),
+                    'item_name' => $service->name, //$faker->word(),
                     'ab_invoice_id' => $incoive->id,
-                    'description' => $faker->sentence(),
-                    'quantity' => $faker->randomNumber(2),
-                    'price' => $faker->randomFloat(2, 1, 1000),
-                    'tax' => $faker->randomFloat(2, 0, 100),
-                    'total' => $faker->randomFloat(2, 1, 10000),
+                    'description' => $service->description, //$faker->sentence(),
+                    'quantity' => 1, //$faker->randomNumber(2),
+                    'price' => $service->subtotal, //->randomFloat(2, 1, 1000),
+                    'tax' => 1.105, //$faker->randomFloat(2, 0, 100),
+                    'total' => $service->final_price //$faker->randomFloat(2, 1, 10000),
                 ]);
             }
         }

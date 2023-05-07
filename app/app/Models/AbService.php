@@ -8,12 +8,17 @@ use Illuminate\Database\Eloquent\Model;
 class AbService extends Model
 {
     use HasFactory;
-    
+
     protected $fillable = [
         'name',
         'description',
-        'price',
-        'ab_currency_id',
+        'functional_units',
+        'unit_price',
+        'min_months_contract',
+        'tax',
+        'subtotal',
+        'final_price',
+        'ab_currency_id'
     ];
 
     public function currency()

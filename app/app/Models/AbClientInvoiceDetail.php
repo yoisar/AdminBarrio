@@ -9,7 +9,7 @@ class AbClientInvoiceDetail extends Model
 {
     use HasFactory;
     protected $fillable = [
-        'item',
+        'item_name',
         'description',
         'quantity',
         'price',

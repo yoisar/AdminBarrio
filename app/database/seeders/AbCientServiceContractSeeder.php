@@ -38,7 +38,7 @@ class AbCientServiceContractSeeder extends Seeder
                     'payment_day' => rand(1, 28),
                     'ab_currency_id' => rand(1, 4),
                     'contract_number' => rand(1, 20222),
-                    'price' => $service->price
+                    'price' => $service->final_price
                 ]);
             }
         }

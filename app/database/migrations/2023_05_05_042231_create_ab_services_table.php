@@ -14,12 +14,15 @@ return new class extends Migration
         Schema::create('ab_services', function (Blueprint $table) {
             $table->id();
             $table->string('name');
-            $table->text('description')->nullable();
-            $table->double('price');
-            $table->unsignedBigInteger('ab_currency_id')->default(1);
-            $table->foreign('ab_currency_id')->references('id')->on('ab_currencies')->onDelete('cascade');
-            $table->double('exchange_rate')->default(1);
+            $table->text('description');
+            $table->integer('functional_units');
+            $table->decimal('unit_price', 8, 2);
+            $table->integer('min_months_contract');
+            $table->decimal('tax', 8, 2);
+            $table->decimal('subtotal', 8, 2);
+            $table->decimal('final_price', 8, 2);
             $table->timestamps();
+            $table->foreignId('ab_currency_id')->constrained('ab_services')->onDelete('cascade');
         });
     }
 

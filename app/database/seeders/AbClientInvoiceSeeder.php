@@ -20,7 +20,7 @@ class AbClientInvoiceSeeder extends Seeder
         $clients = AbClient::all();
 
         foreach ($clients as $client) {
-            for ($i = 1; $i <= 10; $i++) {
+            for ($i = 1; $i <= 1; $i++) {
                 AbClientInvoice::create([
                     'ab_client_id' => $client->id,
                     'invoice_number' => $faker->unique()->randomNumber(5),
