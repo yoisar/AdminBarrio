@@ -46,16 +46,23 @@ class AbRoleSeeder extends Seeder
             ],
             [
                 'name' => 'Propietario',
-                'description' => 'Propietario',
+                'description' => 'Propietario de inmueble, unidad funcional o terreno',
                 'slug' => 'propietario',
                 'guard_name' => 'web',
             ],
             [
-                'name' => 'Inquilino',
-                'description' => 'Inquilino de propiedad',
-                'slug' => 'inquilino',
+                'name' => 'Inquilino de Barrio',
+                'description' => 'Residente de barrio que alquila unidad funcional',
+                'slug' => 'inquilino-barrio',
+                'guard_name' => 'web',
+            ],
+            [
+                'name' => 'Inquilino de Alquiler',
+                'description' => 'Resiendete que alquila en inmuebles en alquiler por un administrador de alquileres',
+                'slug' => 'inquilino-alquiler',
                 'guard_name' => 'web',
             ]
+
         ];
 
         foreach ($roles as $role) {
