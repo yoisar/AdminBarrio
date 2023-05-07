@@ -8,4 +8,10 @@ use Illuminate\Database\Eloquent\Model;
 class AbClientDebt extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'ab_client_id',
+        'next_payment_date',
+        'amount'
+    ];
 }
