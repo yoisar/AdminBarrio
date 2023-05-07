@@ -1,3 +1,14 @@
+<!-- TOC -->
+
+- [AdminBarrio](#adminbarrio)
+- [Estructura del proyecto](#estructura-del-proyecto)
+- [Tecnologías utilizadas](#tecnologías-utilizadas)
+- [Instalación y configuración](#instalación-y-configuración)
+- [Contribuciones](#contribuciones)
+- [Realizar un fork del repositorio](#realizar-un-fork-del-repositorio)
+- [Licencia](#licencia)
+
+<!-- /TOC -->
 # AdminBarrio
 AdminBarrio es un sistema de gestión y administración de barrios, que permite la gestión de los habitantes, propiedades, pagos y servicios de un barrio o conjunto residencial.
 
