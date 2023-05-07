@@ -46,13 +46,9 @@ class DatabaseSeeder extends Seeder
         $this->call(AbCurrencySeeder::class);
         // Services
         $this->call(AbServiceSeeder::class);
-
-
-        // \App\Models\User::factory(10)->create();
-
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+        // Clients
+        $this->call(AbClientSeeder::class);
+        // Services contracts
+        $this->call(AbCientServiceContractSeeder::class);
     }
 }
