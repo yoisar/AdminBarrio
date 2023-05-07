@@ -28,7 +28,7 @@ class AbClientSeeder extends Seeder
             $client->tax_id = $faker->numberBetween(10000000, 99999999);
             $client->tax_responsibility = $faker->randomElement(['Responsable Inscripto', 'Monotributista', 'Exento']);
             $client->ab_city_id = 1;//$faker->numberBetween(1, 100);
-            $client->user_id = 3;
+            $client->user_id = $faker->numberBetween(3, 5);
             $client->save();
         }
     }

@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
+use App\Models\AbClientInvoice;
 use App\Models\AbCurrency;
 use App\Models\AbPermission;
 use Illuminate\Database\Seeder;
@@ -50,5 +51,9 @@ class DatabaseSeeder extends Seeder
         $this->call(AbClientSeeder::class);
         // Services contracts
         $this->call(AbCientServiceContractSeeder::class);
+        // App Clients Invoices
+        $this->call(AbClientInvoiceSeeder::class);
+        // App Clients Invoices DEtails
+        $this->call(AbClientInvoiceDetailSeeder::class);
     }
 }
